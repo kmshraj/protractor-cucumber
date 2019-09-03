@@ -9,7 +9,7 @@ export const config: Config = {
 
     SELENIUM_PROMISE_MANAGER: false,
 
-    baseUrl: "https://www.google.com",
+    baseUrl: "https://www.virginholidays.co.uk",
 
     capabilities: {
         browserName: "chrome",
@@ -19,13 +19,19 @@ export const config: Config = {
     frameworkPath: require.resolve("protractor-cucumber-framework"),
 
     specs: [
-        "../../features/*.feature",
+        "../../features/virginHotel.feature",
     ],
+   
 
     onPrepare: () => {
         browser.ignoreSynchronization = true;
         browser.manage().window().maximize();
+        browser.manage().timeouts().pageLoadTimeout(40000);
+        browser.manage().timeouts().implicitlyWait(25000);
         Reporter.createDirectory(jsonReports);
+        require('ts-node').register({
+            project: 'tsconfig.json'
+        });
     },
 
     cucumberOpts: {
@@ -39,4 +45,5 @@ export const config: Config = {
     onComplete: () => {
         Reporter.createHTMLReport();
     },
+    
 };
