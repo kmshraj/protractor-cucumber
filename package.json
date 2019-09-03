@@ -3,7 +3,7 @@
   "version": "4.0.0",
   "license": "MIT",
   "description": "To demostrate protractor cucumber tests for angular apps with allure report framework",
-  "homepage": "https://github.com/igniteram/protractor-cucumber-typescript",
+  "homepage": "https://github.com/kmshraj/protractor-cucumber.git",
   "keywords": [
     "protractor",
     "cucumber",
@@ -47,5 +47,5 @@
     "ts-node": "^8.0.2",
     "typescript": "^3.0.1"
   },
-  "repository": "https://github.com/igniteram/protractor-cucumber-typescript"
+  "repository": "https://github.com/kmshraj/protractor-cucumber.git"
 }

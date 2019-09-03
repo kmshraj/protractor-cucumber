@@ -52,8 +52,6 @@ npm run build
 ```
 npm test
 ```
-![result](https://raw.githubusercontent.com/igniteram/protractor-cucumber-typescript/master/images/protractor-cucumber-typescript-result.gif)
-
 
 ## License
 ```   
